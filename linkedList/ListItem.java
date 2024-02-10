@@ -9,4 +9,8 @@ public class ListItem {
 		this.data = data;
 		this.next = null;
 	}
+	
+	public String getData() {
+		return data;
+	}
 }
