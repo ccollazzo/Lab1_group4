@@ -18,37 +18,44 @@ public class StackImpl implements Stack {
 	@Override
 	public Boolean isEmpty() {
 		// TODO Auto-generated method stub
-		return null;
+		if (top == -1)
+			return true;
+		else
+			return false;
 	}
 
 	@Override
 	public Boolean isFull() {
 		// TODO Auto-generated method stub
-		return null;
+		if (top+1 == size)
+			return true;
+		else
+			return null;
 	}
 
 	@Override
 	public int size() {
 		// TODO Auto-generated method stub
-		return 0;
+		return size;
 	}
 
 	@Override
 	public String peek() {
 		// TODO Auto-generated method stub
-		return null;
+		return elements[top];
 	}
 
 	@Override
 	public void setCapacity(int size) {
 		// TODO Auto-generated method stub
-		
+		elements = new String[size];
 	}
 
 	@Override
 	public void display() {
 		// TODO Auto-generated method stub
-		
+		for (String s : elements)
+			System.out.println(s);
 	}
  
 
